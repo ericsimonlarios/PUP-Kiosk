@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div-content{
+            display:none;
+            flex-direction: column;
+            position: fixed;
+            overflow: hidden;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: 7px;
+            background-color: white;
+            padding: 5px;
+            height: 350px;
+            width: 250px;
+            z-index: 1;
+            left: 0;
+            top: 24px;
+        }
+        .map-container{
+            display: flex;      
+        }
+    </style>
+</head>
+<body>
+    <div class="pup-map">
+        <h1 style="text-align: center">PUP Kiosk</h1>
+        <div class="cred">
+            Created by: Eric Simon Larios (BSCOE 3-2)
+        </div>
+        <img src="res/PUP kiosk.gif" alt="PUP Kiosk" usemap="#pupmap" />
+      </div>
+      <map name="pupmap">
+        <div class="map-container" id="oval" onmouseover="mouseOver(this.id)">
+            <area shape="circle" coords="451,270, 50" href="#" alt="" />
+            <area shape="circle" coords="407,335, 52" href="#" alt="" />
+            <area shape="poly" coords="377,294,403,256,486,296,444,359" href="#" alt="" />
+        </div>
+        <div class="map-container" id="chapel" onmouseover="mouseOver(this.id)">
+            <area shape="circle" coords="278,336, 42" href="#" alt="" />
+          </div>
+      </map>
+
+      <div class="div-content" id="oval-content">
+        <img id="img-container" style="width: 100%; height: 50%; border-radius: 7px" src="res/oval.jpg" alt="" />
+        <div id="title-container">Oval</div>
+        <div id="text-container">etc etc</div>
+      </div>
+
+      <div class="div-content" id="chapel-content">
+        <img id="img-container" style="width: 100%; height: 50%; border-radius: 7px" src="res/chapel.jpg" alt="" />
+        <div id="title-container">Chapel</div>
+        <div id="text-container">etc etc</div>
+      </div>
+
+      
+      
+</body>
+    <script src="try.js"></script>
+</html>

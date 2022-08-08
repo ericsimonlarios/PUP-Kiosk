@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+        <div class="map-img-container">
+            <div class="coords">
+                <h2 style="margin-top: 50px">Cursor Coordinates</h2>
+                <p>X: <span id="x">n/a</span></p>
+                <p>Y: <span id="y">n/a</span></p>
+              </div>
+            <div>
+                <div class="pup-map">
+                    <h1 style="text-align: center">PUP Kiosk</h1>
+                    <div class="cred">
+                        Created by: Eric Simon Larios (BSCOE 3-2)
+                    </div>
+                    <img src="res/PUP kiosk.gif" alt="PUP Kiosk" usemap="#pupmap" />
+                  </div>
+             </div>
+             <div class="list">
+                 <h2>Mapped Areas</h2>
+                 <ol>
+                     <li>Oval (24)</li>
+                     <li>Obelisk (32)</li>
+                     <li>Catwalk (4)</li>
+                     <li>North Wing (16)</li>
+                     <li>South Wing (17)</li>
+                     <li>East Wing (15)</li>
+                     <li>West Wing (18)</li>
+                     <li>Ninoy Aquino Library and <br> Learning Resource Center (NALALRC) (21)</li>
+                     <li>Interfaith Chapel (11)</li>
+                     <li>The Dome (14)</li>
+                 </ol>
+             </div>  
+        </div>
+      
+      <map name="pupmap">
+        <div class="map-container" id="0" onmousemove="mouseOver(this.id)">
+          <area shape="circle" coords="451,270, 50" href="#" alt="" />
+          <area shape="circle" coords="407,335, 52" href="#" alt="" />
+          <area shape="poly" coords="377,294,403,256,486,296,444,359" href="#" alt="" />
+        </div>
+        <div class="map-container" id="1" onmouseover="mouseOver(this.id)">
+          <area shape="circle" coords="278,336, 42" href="#" alt="" />
+        </div>
+        <div class="map-container" id="2" onmouseover="mouseOver(this.id)">
+          <area shape="circle" coords="322,188, 15" href="#" alt="" />
+        </div>
+        <div class="map-container" id="3" onmouseover="mouseOver(this.id)">
+            <area shape="circle" coords="208,291, 25" href="#" alt="" />
+        </div>
+        <div class="map-container" id="4" onmouseover="mouseOver(this.id)">
+            <area shape="rect" coords="357,175,500,196" href="#" alt="" />
+        </div>
+        <div class="map-container" id="5" onmouseover="mouseOver(this.id)">
+            <area shape="poly" coords="217,266,273,234,277,238,282,236,289,248,285,251,288,255,285,257,289,264,233,293,231,281,228,276" href="#" alt="" />
+        </div>
+        <div class="map-container" id="6" onmouseover="mouseOver(this.id)">
+            <area shape="poly" coords="198,266,142,232,138,238,135,236,131,242,129,241,122,250,128,254,125,259,181,294,185,282,189,276" href="#" alt="" />
+        </div>
+        <div class="map-container" id="7" onmouseover="mouseOver(this.id)">
+            <area shape="poly" coords="191,310,189,379,197,379,197,382,204,382,204,386,214,386,214,380,221,380,222,311,210,315,203,315" href="#" alt="" />
+        </div>
+        <div class="map-container" id="8" onmouseover="mouseOver(this.id)">
+            <area shape="poly" coords="191,313,171,322,183,344,179,346,185,357,158,374,151,363,148,364,115,304,119,302,113,293,142,277,148,286,151,284,162,305,181,295" href="#" alt="" />
+        </div>
+        <div class="map-container" id="9" onmouseover="mouseOver(this.id)">
+            <area shape="poly" coords="168,49,183,99,173,103,177,118,186,116,199,167,222,161,209,113,252,99,246,78,203,89,192,43" href="#" alt="" />
+        </div>
+      </map>
+      
+      <div id="info-container">
+        <img id="img-container" style="width: 100%; height: 50%; border-radius: 7px" src="" alt="" />
+        <div id="title-container">Title</div>
+        <div id="text-container">Text</div>
+      </div>
+            
+    </div>
+   
+    <script src="script.js"></script>
+  </body>
+</html>
